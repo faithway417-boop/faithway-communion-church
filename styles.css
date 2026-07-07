@@ -51,6 +51,14 @@ img {
   max-width: 640px;
 }
 
+.site-nav a {
+  transition: color 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: var(--primary);
+}
+
 .eyebrow {
   margin: 0 0 8px;
   font-size: 0.9rem;
@@ -80,7 +88,7 @@ img {
 .hero {
   display: grid;
   gap: 24px;
-  grid-template-columns: minmax(0, 1.5fr) minmax(300px, 1fr);
+  grid-template-columns: minmax(0, 1.5fr) minmax(320px, 1fr);
   align-items: start;
   margin-top: 24px;
 }
@@ -89,6 +97,33 @@ img {
   margin-top: 0;
   font-size: clamp(2rem, 4vw, 2.8rem);
   line-height: 1.05;
+}
+
+.hero-visual {
+  position: relative;
+}
+
+.hero-visual img {
+  width: 100%;
+  border-radius: 28px;
+  border: 1px solid rgba(37, 99, 235, 0.16);
+  box-shadow: 0 30px 60px rgba(37, 99, 235, 0.12);
+}
+
+.hero-card {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 28px;
+  padding: 26px;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.08);
+}
+
+.hero-card h3 {
+  margin-top: 0;
 }
 
 .hero p {
@@ -212,6 +247,11 @@ img {
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.05);
 }
 
+.card-icon {
+  width: 60px;
+  margin-bottom: 18px;
+}
+
 .info-card h3,
 .feature-card h3 {
   margin-top: 0;
@@ -236,6 +276,29 @@ img {
   border-top: 1px solid rgba(15, 23, 42, 0.08);
   text-align: center;
   color: var(--muted);
+}
+
+.footer-grid {
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-links a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 840px) {
